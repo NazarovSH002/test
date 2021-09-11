@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin: 30px;
+    animation: box 1s linear 1s infinite alternate forwards;
+}
+
+@keyframes box {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(700px, 0);
+    }
+    50% {
+        transform: translate(700px, 500px);
+    }
+    75% {
+        transform: translate(0, 500px)
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
